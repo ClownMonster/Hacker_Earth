@@ -2,7 +2,7 @@
 
 int birthdayCakeCandles(int ar_count, int* ar) {
     int  max = ar[0], count = 0;
-    for(int i=0;i<ar_count;i++) // travering through the array and finding the maximum value in the array
+    for(int i=0;i<ar_count;i++) // traversing through the array and finding the maximum value in the array
     {
         if(ar[i] > max)
             {
@@ -11,7 +11,7 @@ int birthdayCakeCandles(int ar_count, int* ar) {
     }
 
 
-    for(int i=0;i<ar_count;i++) // checking how many elemnts are equal to maximum value and adding it to the count
+    for(int i=0;i<ar_count;i++) // checking how many elements are equal to maximum value and adding it to the count
     {
         if(ar[i] == max)
         count++;
