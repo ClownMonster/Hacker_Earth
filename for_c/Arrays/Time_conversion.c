@@ -5,9 +5,9 @@ char* timeConversion(char* s) {
 static char final[9]; //  creating a statically allocated  array so the data value can be used even after the variables go out of scope
     
     
- // assigning the value from the input to the default output removing the AM and PM
-final[0] = s[0];
-final[1] = s[1];
+ // assigning the value from the input to the default output removing the AM or  PM
+final[0] = s[0]; // default  ...the value may change after evaluation of cases or may remain the same
+final[1] = s[1]; //default  ...the value may change after evaluation of cases or may remain the same
 final[2] = ':';
 final[5] = ':';
 final[3] = s[3];
@@ -19,12 +19,12 @@ final[7] = s[7];
     {
         if(s[0]=='1' && s[1]=='2') // condition for night 12 o'clock
         {
-            final[0] = '0';
+            final[0] = '0'; // demo time is 00:min:sec
             final[1] = '0';
         }
         else{
             final[0] = s[0]; // for other conditions of AM
-            final[1] = s[1];
+            final[1] = s[1];  
         }
     }
 
