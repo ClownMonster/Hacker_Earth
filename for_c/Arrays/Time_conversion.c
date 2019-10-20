@@ -24,7 +24,7 @@ final[7] = s[7];
         }
         else{
             final[0] = s[0]; // for other conditions of AM
-            final[1] = s[1];  
+            final[1] = s[1];  // for rest of the time with AM suffix
         }
     }
 
@@ -51,7 +51,7 @@ final[7] = s[7];
            else if(s[1] == '1')  final[1] = '3';
        }
     
-    }//end of PM if
+    }
 
     
 
