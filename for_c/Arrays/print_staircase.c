@@ -14,6 +14,7 @@ void staircase(int n) {
         }
 
         printf("\n");
+        
     }
 
 }
