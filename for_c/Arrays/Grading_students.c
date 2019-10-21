@@ -1,3 +1,6 @@
+// this is the demo algorithm that has to to be dropped in the blank space
+
+
 int* gradingStudents(int grades_count, int* grades, int* result_count) {
     
    static int my_grades[10];
