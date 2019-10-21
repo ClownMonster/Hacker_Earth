@@ -10,21 +10,21 @@ int* gradingStudents(int grades_count, int* grades, int* result_count) {
         else if((grades[i] % 5)==0) my_grades[i] = grades[i]; // conndition ffor other than 38.. cheking whether the grade is divisible by 5
         else
          {
-             int num = grades[i];
-             int num2 = grades[i];
-             while((num % 5) !=0)
+             int num = grades[i]; // assigning the initial grade of the variable and the value of this is going to change during condition checking below
+             int num2 = grades[i]; // initail value of the grade that doesnt change
+             while((num % 5) !=0) // iteration to check the next multiple of 5
              {
                 num = num +1;
              } 
              
         
-             if((num-num2) < 3) my_grades[i] = num;
-             else my_grades[i] = num2;
+             if((num-num2) < 3) my_grades[i] = num; //  checking the diiference b/w initial to next multiple of the 5
+             else my_grades[i] = num2;  // if differnce not less than 3 the value of the grade will not be modified
 
         }
     }
     
 
-    *result_count = grades_count;
-    return my_grades;
-}
+    *result_count = grades_count;  // assigning the no of grades to the resulot_count so that it can be used to print the output
+    return my_grades; // returning the statically allocated array to the calling function eith its values
+} 
