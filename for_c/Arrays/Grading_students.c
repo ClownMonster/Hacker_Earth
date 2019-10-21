@@ -27,4 +27,5 @@ int* gradingStudents(int grades_count, int* grades, int* result_count) {
 
     *result_count = grades_count;  // assigning the no of grades to the resulot_count so that it can be used to print the output
     return my_grades; // returning the statically allocated array to the calling function eith its values
+    
 } 
