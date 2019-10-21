@@ -7,7 +7,7 @@ int* gradingStudents(int grades_count, int* grades, int* result_count) {
     for(int i = 0;  i< grades_count ; i++)
     {
         if(grades[i] < 38) my_grades[i] = grades[i]; // condition for the marks less than 38 and assigning the same grade
-        else if((grades[i] % 5)==0) my_grades[i] = grades[i]; // conndition ffor other than 38.. cheking whether the grade is divisible by 5
+        else if((grades[i] % 5)==0) my_grades[i] = grades[i]; // conndition for other than 38.. cheking whether the grade is divisible by 5
         else
          {
              int num = grades[i];
